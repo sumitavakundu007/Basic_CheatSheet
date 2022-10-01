@@ -36,3 +36,23 @@ sudo umount /dev/sdX
 2. https://linuxhint.com/mount-usb-drive-centos/:~:text=According%20to%20the%20%E2%80%9Cfdisk%E2%80%9D%20command,hard%20drives%20or%20USB%20drives.
 3. https://unix.stackexchange.com/questions/19918/umount-device-is-busy
 
+
+# 2. 'rsync' related command
+### rsync command and flags
+```bash
+rsync -av --progress --max-size=1g --exclude={'dir3/*', 'file1.txt', 'dir1'} /src /dest
+```
+# 3. Check file and floder size
+### Check file size
+```bash
+ls -lsrh
+```
+### Folder size
+```bash
+du -sh -- *
+```
+# 4. 'ffmpeg' related
+```bash
+ffmpeg -r 2 -i input_file_%02d.png -s 1920x957 -vframes 1000 -b 4800000 -r 2 output_file.mp4
+```
+Change the frame rates accordingly
