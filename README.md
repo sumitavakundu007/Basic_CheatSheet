@@ -1,4 +1,4 @@
-# random_stuffs
+# Basic CheatSheet
 Few random commands for linux/Windows
 
 # 1. External Hard-disk realted
